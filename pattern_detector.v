@@ -3,8 +3,8 @@ module pattern_detector (
     output reg pattern_found   
 );
 
-parameter state_reg_width = 3;
-parameter [state_reg_width-1 : 0] s0 = 3'b000,
+localparam state_reg_width = 3;
+localparam [state_reg_width-1 : 0] s0 = 3'b000,
                                   s1 = 3'b001,
                                   s2 = 3'b010,
                                   s3 = 3'b011,
