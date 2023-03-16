@@ -12,7 +12,7 @@ localparam [state_reg_width-1 : 0] s0 = 3'b000,
 
 reg [state_reg_width-1 : 0] curr_state , next_state ;
 
-always @(posedge clk ) begin
+    always @(posedge clk , posedge rst ) begin
     if (rst) begin
         curr_state <= s0 ;
     end
